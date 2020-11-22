@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.header{
+  padding: 10px;
+  color: white;
+  background-color: firebrick;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0; 
+  z-index: 100;
+}
+.header h1{
+  padding: 0;
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+}
+.header h1 sup{
+  font-size: 10px;
+}
+.googlemap {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.location-marker {
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+}
+.location-info {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  background-color: rgb(138, 138, 138, 0.6);
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+.location-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+.location-info li {
+  padding: 5px 0;
+}
+.location-info li strong{
+  font-size: 15px;
+}
+.Loaders{
+ position: absolute;
+ left: 45%;
+ top: 35%;
+ z-index: 1;
+}
+.Loader{
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
